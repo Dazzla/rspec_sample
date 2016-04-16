@@ -4,7 +4,7 @@ class BikePointService
   include RestClient
 
   @service_endpoint = 'http://api.tfl.gov.uk/BikePoint'
-  @all_bikepoints_service = 'https://api-neon.tfl.gov.uk/BikePoint'
+  @all_bike_points_service = 'https://api-neon.tfl.gov.uk/BikePoint'
   @text_search_service = 'https://api-neon.tfl.gov.uk/BikePoint/Search'
 
   TEST_BIKE_POINT_ID = 'BikePoints_1'
@@ -14,11 +14,11 @@ class BikePointService
   end
 
   def self.bike_points
-    self.get_request @all_bikepoints_service
+    self.get_request @all_bike_points_service
   end
 
   def self.bike_point(id = TEST_BIKE_POINT_ID)
-    self.get_request @all_bikepoints_service/id
+    self.get_request @all_bike_points_service/id
   end
 
   def self.search(query)
