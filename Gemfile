@@ -1,3 +1,5 @@
 source 'https://rubygems.org'
 gem 'rest-client'
 gem 'rspec', '~> 3.4'
+gem 'ci_reporter_rspec'
+gem 'simplecov'
