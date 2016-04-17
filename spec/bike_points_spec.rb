@@ -1,5 +1,3 @@
-require_relative '../bike_point_service'
-
 describe BikePointService do
 
   describe 'Bike Points' do
