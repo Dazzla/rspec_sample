@@ -1,9 +1,11 @@
-describe BikePointService do
+require_relative '../spec_helper'
+
+describe GetBikePointsService do
 
   describe 'Bike Points' do
 
     before :all do
-      @bike_points = BikePointService.bike_points
+      @bike_points = GetBikePointsService.bike_points
     end
 
     it 'has a Place Entity' do

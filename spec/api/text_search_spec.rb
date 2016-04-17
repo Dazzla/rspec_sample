@@ -1,10 +1,9 @@
-
-describe BikePointService do
+describe BikePointTextSearch do
 
   describe 'Text Search' do
 
     before :all do
-      @search_results = BikePointService.search 'lambeth'
+      @search_results = BikePointTextSearch.search 'lambeth'
     end
 
     it 'performs a text search' do

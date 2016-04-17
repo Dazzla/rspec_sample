@@ -1,11 +1,9 @@
-require_relative '../bike_point_service'
-
-describe BikePointService do
+describe BikePointServiceEndPoint do
 
   describe 'Endpoint' do
 
     before :all do
-      @endpoint = BikePointService.endpoint
+      @endpoint = BikePointServiceEndPoint.endpoint
     end
 
     it 'is Enumerable' do
