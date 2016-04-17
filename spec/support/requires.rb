@@ -1,5 +1,6 @@
 require 'rest-client'
 require 'rake'
+require 'rspec_junit_formatter'
 
 require_relative 'bike_service'
 require_relative 'bike_point_service_end_point'
